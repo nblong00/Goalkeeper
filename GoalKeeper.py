@@ -8,7 +8,7 @@ player_number = 1
 
 add_player = input("Would you like to add a player to the list? (Yes/No) ")
 
-while add_player.title() != "No":
+while add_player.title() == "Yes":
     player_name = input("Enter the name of the player to add to the team: ")
     players.append(player_name)
     add_player = input("Would you like to add a player to the list? (Yes/No) ")
