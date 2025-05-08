@@ -1,6 +1,5 @@
 # TODO Create an empty list to maintain the player names
 players = []
-player_number = 1
 
 # TODO Ask the user if they'd like to add players to the list.
 # If the user answers "Yes", let them type in a name and add it to the list.
@@ -18,9 +17,8 @@ print("There are {} players on the team.".format(len(players)))
 
 # TODO Print the player number and the player name
 # The player number should start at the number one
-for player in players:
-    print("Player {} : {}".format(player_number, player))
-    player_number += 1
+for index, player in enumerate(players, 1):
+    print("Player {} : {}".format(index, player))
 
 # TODO Select a goalkeeper from the above roster
 
